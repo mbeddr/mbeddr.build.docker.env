@@ -35,7 +35,6 @@ RUN cd /tmp && \
 	rm -rf bin/
 RUN mkdir -p /root/.ssh
 ADD ./sshconfig /root/.ssh/config
-RUN chmod +x /start
 VOLUME ["/build"]
 WORKDIR /build
 ENTRYPOINT ["/bin/bash"]
